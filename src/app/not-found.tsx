@@ -1,0 +1,1 @@
+import {DemoNotice} from '@/components/DemoNotice';export default function NotFound(){return <DemoNotice title="Page not found." description="The page you're looking for isn't part of this collection."/>}

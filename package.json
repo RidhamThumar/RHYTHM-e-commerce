@@ -1,0 +1,46 @@
+{
+  "name": "rhythm-ecommerce",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:deploy": "prisma migrate deploy",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:studio": "prisma studio",
+    "check:auth-env": "node scripts/check-auth-env.cjs",
+    "phase7:preflight": "node scripts/phase7-preflight.cjs",
+    "phase7:deps": "node scripts/phase7-deps-check.cjs",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "next": "^15.5.29",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "lucide-react": "^0.468.0",
+    "@prisma/client": "7.10.1",
+    "server-only": "^0.0.1",
+    "@supabase/supabase-js": "^2.58.0",
+    "@supabase/ssr": "^0.6.1",
+    "nodemailer": "10.3.1",
+    "@prisma/adapter-pg": "7.10.1",
+    "pg": "^8.16.3",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "prisma": "7.10.1",
+    "@types/pg": "^8.15.5",
+    "tsx": "^4.20.6"
+  },
+  "overrides": {
+    "postcss": "8.5.32"
+  }
+}

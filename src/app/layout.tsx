@@ -1,0 +1,4 @@
+import type { Metadata } from 'next';
+import { Header } from '@/components/Header';import { Footer } from '@/components/Footer';import { StoreProvider } from '@/context/StoreContext';import './globals.css';
+export const metadata:Metadata={title:{default:'RHYTHM — Modern Essentials',template:'%s | RHYTHM'},description:'Considered clothing for the modern everyday. Discover refined essentials at RHYTHM.'};
+export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body><StoreProvider><Header/><main>{children}</main><Footer/></StoreProvider></body></html>}
